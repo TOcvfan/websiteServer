@@ -9,7 +9,7 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 const db = knex({
-  client: 'mysql',
+  client: 'pg',
   connection: {
     host : 'https://hammervig.dk.mysql',
     user : 'hammervig_dk',
