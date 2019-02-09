@@ -11,7 +11,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'mysql',
   connection: {
-    host : 'http://hammervig.dk.mysql',
+    host : 'https://hammervig.dk.mysql',
     user : 'hammervig_dk',
     password : 'sx3Xhsg8',
     database : 'hammervig_dk'
