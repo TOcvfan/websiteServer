@@ -12,8 +12,8 @@ const db = knex({
   client: 'mysql',
   connection: {
     host : 'mysql://mariadb:3306/',
-    user : 'user84Y',
-    password : 'sdb4Qkg4m5vcD7Yq',
+    user : 'mysql',
+    password : 'test',
     database : 'sampledb'
   }
 });
