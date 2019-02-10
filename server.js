@@ -11,15 +11,19 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'mysql',
   connection: {
-    host : 'mysql://mysqldb:3306/',
-    user : 'mysql',
-    password : 'test',
+    host : 'mysql://mysql:3306/',
+    user : 'TOcvfan',
+    password : 'TOcvfan1979',
     database : 'sampledb'
   }
 });
 
 /*db.select('*').from('users').then(data => {
 	console.log(data);
+	Username: TOcvfan
+       Password: TOcvfan1979
+  Database Name: sampledb
+ Connection URL: mysql://mysql:3306/
 });*/
 
 const app = express();
