@@ -11,7 +11,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'mysql',
   connection: {
-    host : 'mysql://mariadb:3306/',
+    host : 'mysql://mysqldb:3306/',
     user : 'mysql',
     password : 'test',
     database : 'sampledb'
