@@ -11,10 +11,10 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'mysql',
   connection: {
-    host : 'mysql://mysql:3306/',
-    user : 'TOcvfan',
-    password : 'TOcvfan1979',
-    database : 'sampledb'
+    host : '206.189.226.237:22256/',
+    user : 'root',
+    password : 'f3YI7fWJEOJjiNU',
+    database : 'ch_sampledb'
   }
 });
 
