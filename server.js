@@ -11,10 +11,10 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'mysql',
   connection: {
-    host : '206.189.226.237',
-    user : 'root',
-    password : 'f3YI7fWJEOJjiNU',
-    port: '22256',
+    host : 'http://server-database-server-project.7e14.starter-us-west-2.openshiftapps.com/',
+    user : 'TOcvfan',
+    password : 'TOcvfan1979',
+    port: '3306',
     database : 'ch_sampledb'
   }
 });
@@ -22,8 +22,9 @@ const db = knex({
 /*db.select('*').from('users').then(data => {
 	console.log(data);
 	Username: TOcvfan
-       Password: TOcvfan1979
-  Database Name: sampledb
+       Password: f3YI7fWJEOJjiNU
+  Database Name: ch_sampledb
+  	   port: '22256'
  Connection URL: mysql://mysql:3306/
 });*/
 
