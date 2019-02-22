@@ -11,11 +11,11 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'mysql',
   connection: {
-    host : 'http://server-database-server-project.7e14.starter-us-west-2.openshiftapps.com/',
+    host : '206.189.226.237',
     user : 'TOcvfan',
-    password : 'TOcvfan1979',
-    port: '3306',
-    database : 'sampledb'
+    password : 'f3YI7fWJEOJjiNU',
+    port: '22256',
+    database : 'ch_sampledb'
   }
 });
 
