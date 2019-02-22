@@ -15,7 +15,7 @@ const db = knex({
     user : 'TOcvfan',
     password : 'TOcvfan1979',
     port: '3306',
-    database : 'ch_sampledb'
+    database : 'sampledb'
   }
 });
 
