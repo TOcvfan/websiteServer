@@ -11,11 +11,11 @@ const image = require('./controllers/image');
 /*const db = knex({
   client: 'mysql',
   connection: {
-    host : '206.189.226.237',
+    host : '127.0.0.1',
     user : 'root',
-    password : 'f3YI7fWJEOJjiNU',
-    port: '22256',
-    database : 'ch_sampledb'
+    password : 'TOcvfan1979',
+    port: '3306',
+    database : 'facedetectordb'
   }
 });*/
 
@@ -30,13 +30,6 @@ const db = knex({
   }
 });
 
-/*db.select('*').from('users').then(data => {
-	console.log(data);
-	Username: user84Y
-       Password: sdb4Qkg4m5vcD7Yq
-  Database Name: sampledb
- Connection URL: mysql://mariadb:3306/
-});*/
 
 const app = express();
 
@@ -57,6 +50,6 @@ app.put('/image', (req, res) => {image.handleImage(req, res, db)})
 
 app.post('/imageurl', (req, res) => {image.handleApiCall(req, res)})
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3001, () => {
 	console.log(`App is running on ${process.env.PORT}`)
 });
