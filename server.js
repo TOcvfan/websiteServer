@@ -49,9 +49,18 @@ app.get('/profile/:id', (req, res) => {profile.handleProfileGet(req, res, db)})
 app.put('/image', (req, res) => {image.handleImage(req, res, db)})
 
 app.post('/imageurl', (req, res) => {image.handleApiCall(req, res)})
+<<<<<<< HEAD
 
 app.post('/birthday', (req, res) => {bday.handleBdayRegistraition(req, res, db)})
 
 app.listen(process.env.PORT || 3001, () => {
 	console.log(`App is running on ${process.env.PORT}`)
 });
+=======
+
+app.post('/birthday', (req, res) => {bday.handleBdayRegistraition(req, res, db)})
+
+app.listen(process.env.PORT || 3001, () => {
+	console.log(`App is running on ${process.env.PORT}`)
+});
+>>>>>>> 8b5fdb6ac5263581b090fea4fa391a544806b891
