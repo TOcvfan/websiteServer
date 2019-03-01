@@ -8,25 +8,28 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
+/*const db = knex({
+  client: 'mysql',
+  connection: {
+    host : '127.0.0.1',
+    user : 'root',
+    password : 'TOcvfan1979',
+    port: '3306',
+    database : 'facedetectordb'
+  }
+});*/
+
 const db = knex({
   client: 'mysql',
   connection: {
-    host : '206.189.226.237',
-    user : 'TOcvfan',
-    password : 'f3YI7fWJEOJjiNU',
-    port: '22256',
-    database : 'ch_sampledb'
+    host : 'us-cdbr-iron-east-03.cleardb.net',
+    user : 'b40765b50e7aab',
+    password : '5aeb91de',
+    port: '3306',
+    database : 'heroku_6df70833f09744a'
   }
 });
 
-/*db.select('*').from('users').then(data => {
-	console.log(data);
-	Username: TOcvfan
-       Password: f3YI7fWJEOJjiNU
-  Database Name: ch_sampledb
-  	   port: '22256'
- Connection URL: mysql://mysql:3306/
-});*/
 
 const app = express();
 
@@ -34,7 +37,7 @@ app.use(bodyParser.json());
 app.use(cors())
 
 app.get('/', (req, res) => {
-	res.send('its working');
+	res.send('it is working');
 })
 
 app.post('/signin', (req, res) => {signin.handleSignin(req, res, db, bcrypt)})
@@ -47,6 +50,8 @@ app.put('/image', (req, res) => {image.handleImage(req, res, db)})
 
 app.post('/imageurl', (req, res) => {image.handleApiCall(req, res)})
 
-app.listen(process.env.PORT || 8080, () => {
-	console.log(`app is runing on port 8080`)
+app.post('/birthday', (req, res) => {bday.handleBdayRegistraition(req, res, db)})
+
+app.listen(process.env.PORT || 3001, () => {
+	console.log(`App is running on ${process.env.PORT}`)
 });
