@@ -12,7 +12,6 @@ const handleRegister = (req, res, db, bcrypt) => {
 		.into('login')
 		.returning('email')
 		.then(loginEmail => {
-			console.log(email)
 			return trx('users')
 			.returning('*')
 			.insert({
@@ -24,7 +23,6 @@ const handleRegister = (req, res, db, bcrypt) => {
 				gender: gender
 			})
 			.then(user => {
-			console.log(user[0]);
 			res.json(user[0]);
 			})
 		})
