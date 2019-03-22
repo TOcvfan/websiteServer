@@ -35,14 +35,7 @@ const db = knex({
   }
 });
 /*
-const db = knex({
-  client: 'mysql',
-  connection: {
-    host : 'us-cdbr-iron-east-03.cleardb.net',
-    user : 'b40765b50e7aab',
-    password : '5aeb91de',
-    port: '3306',
-    database : 'heroku_6df70833f09744a'
+
   }
 });*/
 
