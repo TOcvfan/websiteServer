@@ -11,9 +11,7 @@ const handleOrdersPost = (req, res, db) => {
 			orderDate: new Date()
 			})
 		.into('orders')
-		.returning('orderId').map(function(row){
-			return row.orderId;
-		}).then(function(orders) {console.log(orders);})
+		.returning('orderId')
 		.then(orderId => {
 			return trx('orderitem')
 			.returning('*')
