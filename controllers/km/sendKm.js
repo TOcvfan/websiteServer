@@ -55,7 +55,7 @@ const handleSendKm = (req, res, nodemailer, inLineCss) => {
           secure: true, // true for 465, false for other ports mail-1.dk 
           auth: {
               user: 'registrerkm@itsmurf.dk',
-              pass: 'SmartMailer-2020!'
+              pass: ''
           },
           tls:{
             rejectUnauthorized: false
