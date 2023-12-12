@@ -34,7 +34,7 @@ const handleArbejdsseddel = (req, res, nodemailer) => {
           secure: false, // true for 465, false for other ports mail-1.dk 
           auth: {
               user: 'bb@jbsikring.dk',
-              pass: '17181718'
+              pass: ''
           },
           tls:{
             rejectUnauthorized: false
