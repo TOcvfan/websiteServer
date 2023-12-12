@@ -31,7 +31,7 @@ const handleEmailFromCV = (req, res, nodemailer, inLineCss) => {
         secure: true, // true for 465, false for other ports
         auth: {
             user: 'contact@itsmurf.dk',
-            pass: 'SmurfMis-2013!'
+            pass: ''
         },
         tls: {
             rejectUnauthorized: false
